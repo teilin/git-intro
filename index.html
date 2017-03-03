@@ -24,8 +24,157 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>Git Introduksjon</h1>
+					<p>Teis Lindemark</p>
+				</section>
+				<section>
+					<h2>Git</h2>
+					<ol>
+						<li>A completely ignorant, childish person with no manners.</li>
+						<li>A person who feels justified in their callow behaviour.</li>
+						<li>A pubescent kid who thinks it's totally cool to act like a moron on the internet, 
+						only because no one can actually reach through the screen and punch their lights out.</li>
+					</ol>
+					<a href="http://www.urbandictionary.com/define.php?term=Git">http://www.urbandictionary.com/define.php?term=Git</a>
+				</section>
+				<section>
+					<h2>Hva er Git?</h2>
+					<ul>
+						<li>Versjonskontrollsystem (VCS)</li>
+						<li>Distribuert VCS</li>
+						<li>Laget av Linus Torvalds i 2005</li>
+						<li>Sterk støtte for ikke linjær utvikling</li>
+						<li>Git kan bli brukt som en server ut av boksen</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Hvorfor git?</h2>
+					<ul>
+						<li>Sterk støtte for ikke linjær utvikling</li>
+						<li>Sterk støtte for offline jobbing</li>
+						<li>Muligheten for lokale brancher</li>
+						<li>Enkelt ikke blande funksjonalitet under utvikling</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Git setup</h2>
+					<ul>
+						<li><pre><code data-trim data-noescape>git config --global user.name "Ditt navn"</code></pre></li>
+						<li><pre><code data-trim data-noescape>git config --global user.email "Ditt navn@acos.no"</code></pre></li>
+					</ul>
+				</section>
+				<section>
+					<h2>Basic kommandoer</h2>
+					<section>
+						<h3><pre><code data-trim data-noescape>git clone</code></pre></h3>
+						<p>
+							Clones a repository into a newly created directory, 
+							creates remote-tracking branches for each branch in the cloned repository, 
+							and creates and checks out an initial branch that is forked 
+							from the cloned repository’s currently active branch.
+						</p>
+						<a href="https://git-scm.com/docs/git-clone">https://git-scm.com/docs/git-clone</a>
+					</section>
+					<section>
+						<h3><pre><code data-trim data-noescape>git pull</code></pre></h3>
+						<p>
+							Incorporates changes from a remote repository into the current branch. 
+							In its default mode, git pull is shorthand for git fetch followed by git merge FETCH_HEAD.
+						</p>
+						<p>
+							More precisely, git pull runs git fetch with the given parameters and calls git merge to merge 
+							the retrieved branch heads into the current branch. With --rebase, it runs git rebase instead of git merge.
+						</p>
+						<a href="https://git-scm.com/docs/git-pull">https://git-scm.com/docs/git-pull</a>
+					</section>
+
+					<section>
+						<h3><pre><code data-trim data-noescape>git push</code></pre></h3>
+						<p>
+							Updates remote refs using local refs, while sending objects necessary to complete the given refs.
+						</p>
+						<a href="https://git-scm.com/docs/git-push">https://git-scm.com/docs/git-push</a>
+					</section>
+					<section>
+						<h3><pre><code data-trim data-noescape>git fetch</code></pre></h3>
+						<p>
+							Fetch branches and/or tags (collectively, "refs") from one or more other repositories, 
+							along with the objects necessary to complete their histories. 
+							Remote-tracking branches are updated (see the description of <refspec> below for ways to control this behavior).
+						</p>
+						<a href="https://git-scm.com/docs/git-fetch">https://git-scm.com/docs/git-fetch</a>
+					</section>
+					<section>
+						<h3><pre><code data-trim data-noescape>git checkout</code></pre></h3>
+						<p>
+							Updates files in the working tree to match the version in the index or the specified tree. 
+							If no paths are given, git checkout will also update HEAD to set the specified branch as the current branch.
+						</p>
+						<a href="https://git-scm.com/docs/git-checkout">https://git-scm.com/docs/git-checkout</a>
+					</section>
+					<section>
+						<h3><pre><code data-trim data-noescape>git branch</code></pre></h3>
+						<p>
+							git-branch - List, create, or delete branches
+						</p>
+						<a href="https://git-scm.com/docs/git-branch">https://git-scm.com/docs/git-branch</a>
+					</section>
+					<section>
+						<h3><pre><code data-trim data-noescape>git rebase</code></pre></h3>
+						<p>
+							git-rebase - Reapply commits on top of another base tip
+						</p>
+						<a href="https://git-scm.com/docs/git-rebase">https://git-scm.com/docs/git-rebase</a>
+					</section>
+				</section>
+				<section>
+					<h2>Git alias</h2>
+					<section>
+						<h3>Hva er det?</h3>
+						<ul>
+							<li>"Snarvei" til git kommandoer</li>
+							<li>Kan være kortform av enkle git kommandoer</li>
+							<li>Kan også være snarvei til lange kompliserte git kommandoer</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Hvordan definere alias</h3>
+						<ul>
+							<li></li>
+						</ul>
+					</section>
+					<section>
+						<h3>Noen enkle alias</h3>
+						<pre>
+							<code data-trim data-noescape>
+								$ git config --global alias.co checkout
+								$ git config --global alias.br branch
+								$ git config --global alias.ci commit
+								$ git config --global alias.st status
+							</code>
+						</pre>
+					</section>
+					<section>
+						<h3><pre><code data-trim data-noescape>git log</code></pre></h3>
+						<p>
+							...
+						</p>
+					</section>
+				</section>
+				<section>
+					<h2>Andre nyttige kommandoer</h2>
+					<section>
+						<h3><pre><code data-trim data-noescape>git stash</code></pre></h3>
+						<p>
+							git-stage - Add file contents to the staging area
+						</p>
+						<a href="https://git-scm.com/docs/git-stage">https://git-scm.com/docs/git-stage</a>
+					</section>
+				</section>
+				<section>
+					<img src="giphy.gif" />
+				</section>
 			</div>
 		</div>
 
