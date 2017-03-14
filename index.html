@@ -59,10 +59,21 @@
 				</section>
 				<section>
 					<h2>Git setup</h2>
-					<ul>
-						<li><pre><code data-trim data-noescape>git config --global user.name "Ditt navn"</code></pre></li>
-						<li><pre><code data-trim data-noescape>git config --global user.email "Ditt navn@acos.no"</code></pre></li>
-					</ul>
+					<section>
+						<ul>
+							<li><pre><code data-trim data-noescape>git config --global user.name "Ditt navn"</code></pre></li>
+							<li><pre><code data-trim data-noescape>git config --global user.email "Ditt navn@acos.no"</code></pre></li>
+						</ul>
+					</section>
+					<section data-background-iframe="https://git-scm.com/downloads">
+						<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>
+					</section>
+					<section>
+						<p>
+							Start git bash
+						</p>
+						<pre><code data-trim data-noescape>$ ssh-keygen</code></pre>
+					</section>
 				</section>
 				<section>
 					<h2>Basic kommandoer</h2>
@@ -75,6 +86,9 @@
 							from the cloned repository’s currently active branch.
 						</p>
 						<a href="https://git-scm.com/docs/git-clone">https://git-scm.com/docs/git-clone</a>
+						<p>
+							<pre><code data-trim data-noescape>git clone git@git.intern.acos.no:teis/git-intro.git</code></pre>
+						</p>
 					</section>
 					<section>
 						<h3><pre><code data-trim data-noescape>git pull</code></pre></h3>
@@ -88,7 +102,22 @@
 						</p>
 						<a href="https://git-scm.com/docs/git-pull">https://git-scm.com/docs/git-pull</a>
 					</section>
-
+					<section>
+						<h3><pre><code data-trim data-noescape>git add</code></pre></h3>
+						<p>
+							This command updates the index using the current content found in the working tree, to prepare the content staged for the next commit. 
+							It typically adds the current content of existing paths as a whole, but with some options it can also be used to add content with only 
+							part of the changes made to the working tree files applied, or remove paths that do not exist in the working tree anymore.
+						</p>
+						<a href="https://git-scm.com/docs/git-add">https://git-scm.com/docs/git-add</a>
+					</section>
+					<section>
+						<h3><pre><code data-trim data-noescape>git commit</code></pre></h3>
+						<p>
+							Stores the current contents of the index in a new commit along with a log message from the user describing the changes.
+						</p>
+						<a href="https://git-scm.com/docs/git-commit">https://git-scm.com/docs/git-commit</a>
+					</section>
 					<section>
 						<h3><pre><code data-trim data-noescape>git push</code></pre></h3>
 						<p>
@@ -141,7 +170,9 @@
 					<section>
 						<h3>Hvordan definere alias</h3>
 						<ul>
-							<li></li>
+							<li>Fra kommandolinje</li>
+							<p><pre><code data-trim data-noescape>git config --global alias.XX git_kommando</code></pre></p>
+							<li>Endring rett i .gitconfig filen</li>
 						</ul>
 					</section>
 					<section>
@@ -156,7 +187,7 @@
 						</pre>
 					</section>
 					<section>
-						<h3><pre><code data-trim data-noescape>git log</code></pre></h3>
+						<h3><pre><code data-trim data-noescape>git log --branches --not --remotes --simplify-by-decoration --decorate --oneline</code></pre></h3>
 						<p>
 							...
 						</p>
@@ -170,6 +201,29 @@
 							git-stage - Add file contents to the staging area
 						</p>
 						<a href="https://git-scm.com/docs/git-stage">https://git-scm.com/docs/git-stage</a>
+					</section>
+				</section>
+				<section>
+					<h2>Verktøy</h2>
+					<section>
+						<div style="width=45%;">
+							<img width="300" src="http://cmd.to/img/logo.png">
+						</div>
+						<div style="width=45%;">
+							<ul>
+								<li><a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<div style="width=45%;">
+							<img width="300" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/TortoiseGit_logo.svg/220px-TortoiseGit_logo.svg.png">
+						</div>
+						<div style="width=45%;">
+							<ul>
+								<li><a href="https://tortoisegit.org/">https://tortoisegit.org/</a></li>
+							</ul>
+						</div>
 					</section>
 				</section>
 				<section>
